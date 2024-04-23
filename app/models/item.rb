@@ -1,5 +1,4 @@
 class Item < ApplicationRecord
-
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :category
   belongs_to_active_hash :condition
@@ -29,5 +28,4 @@ class Item < ApplicationRecord
     validates :prefecture_id
     validates :preparation_id
   end
-
 end
