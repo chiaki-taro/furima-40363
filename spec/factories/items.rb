@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :item do
-    association :user
 
+    user_id { FactoryBot.create(:user).id }
     name { Faker::Name.name }
     explanation { Faker::Lorem.sentence }
     category_id { Faker::Number.between(from: 1, to: 10) }
